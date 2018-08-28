@@ -31,6 +31,34 @@
     .content {
       flex: 2;
     }
+    
+    .login-container{
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      width:500px;
+      margin:30px auto;
+    }
+    button {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
   </style>
   <title>Fiddle</title>
 </head>
@@ -43,7 +71,17 @@
       <div class="subTitle">secondary stuff</div>
     </div>
     <div class="content">
-      <div>login</div>
+      <div class="login-container">
+        <label for="uname"><b>Username</b>
+        </label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+      </div>
     </div>
   </div>
 </body>
